@@ -4,6 +4,7 @@ global
   group root
   pidfile <%= pid_file %>
 
+
 defaults
   mode http
   maxconn 50000
@@ -26,6 +27,7 @@ listen TOR-in
   mode tcp
   default_backend TOR
   balance roundrobin
+
 
 backend TOR
   mode tcp
